@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\caption{Clean-traffic detection performance. ECE is lower-is-better; other metrics are higher-is-better.}
+\label{tab:clean}
+\centering
+\begin{tabular}{lcccccccc}
+\toprule
+& \multicolumn{4}{c}{N-BaIoT} & \multicolumn{4}{c}{UNSW-NB15} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+Method & F$_1$ & Acc. & Bal. Acc. & ECE & F$_1$ & Acc. & Bal. Acc. & ECE \\
+\midrule
+ERM-MLP & 0.9994 & 0.9994 & 0.9994 & 0.0003 & 0.4156 & 0.6536 & 0.6107 & 0.1607 \\
+AT-ERM & 0.9994 & 0.9994 & 0.9994 & 0.0002 & 0.3899 & 0.6400 & 0.6092 & 0.1481 \\
+MC-Dropout & 0.9994 & 0.9994 & 0.9994 & 0.0019 & 0.3945 & 0.6440 & \textbf{0.6142} & 0.1389 \\
+Random Forest & \textbf{0.9999} & \textbf{0.9999} & \textbf{0.9999} & \textbf{0.0002} & \textbf{0.4833} & \textbf{0.7477} & 0.5026 & \textbf{0.0515} \\
+Isolation Forest & 0.1637 & 0.3249 & 0.3249 & 0.5816 & 0.0016 & 0.0082 & 0.1000 & 0.8944 \\
+UVIF-IoT & 0.9994 & 0.9994 & 0.9994 & 0.0009 & 0.3592 & 0.7449 & 0.4009 & 0.0561 \\
+\bottomrule
+\end{tabular}
+\end{table*}

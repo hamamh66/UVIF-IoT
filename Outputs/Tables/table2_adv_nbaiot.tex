@@ -1,0 +1,15 @@
+\begin{table}[t]
+\caption{Adversarial robustness (macro-F$_1$) — NBAIOT.}
+\label{tab:adv_nbaiot}
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Method & FGSM $\varepsilon$=.01 & FGSM $\varepsilon$=.02 & PGD-20 $\varepsilon$=.01 & PGD-20 $\varepsilon$=.02 & CW-L$_2$ \\
+\midrule
+ERM-MLP & \textbf{0.9994} & 0.9991 & \textbf{0.9994} & 0.9991 & 0.9879 \\
+AT-ERM & 0.9993 & \textbf{0.9992} & 0.9993 & \textbf{0.9992} & \textbf{0.9985} \\
+MC-Dropout & 0.9993 & 0.9988 & 0.9993 & 0.9988 & 0.9960 \\
+UVIF-IoT & 0.9992 & 0.9989 & 0.9991 & 0.9990 & 0.9932 \\
+\bottomrule
+\end{tabular}
+\end{table}

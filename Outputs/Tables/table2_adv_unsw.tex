@@ -1,0 +1,15 @@
+\begin{table}[t]
+\caption{Adversarial robustness (macro-F$_1$) — UNSW.}
+\label{tab:adv_unsw}
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Method & FGSM $\varepsilon$=.01 & FGSM $\varepsilon$=.02 & PGD-20 $\varepsilon$=.01 & PGD-20 $\varepsilon$=.02 & CW-L$_2$ \\
+\midrule
+ERM-MLP & 0.3110 & 0.2755 & 0.3071 & 0.2683 & 0.1828 \\
+AT-ERM & \textbf{0.3795} & \textbf{0.3694} & \textbf{0.3795} & \textbf{0.3665} & 0.2189 \\
+MC-Dropout & 0.3312 & 0.2842 & 0.3108 & 0.2669 & \textbf{0.2221} \\
+UVIF-IoT & 0.3351 & 0.3134 & 0.3324 & 0.3052 & 0.2139 \\
+\bottomrule
+\end{tabular}
+\end{table}

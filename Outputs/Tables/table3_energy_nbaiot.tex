@@ -1,0 +1,14 @@
+\begin{table}[t]
+\caption{Energy-gated inference — NBAIOT. Feature counts are test-set means.}
+\label{tab:energy_nbaiot}
+\centering
+\begin{tabular}{lccccc}
+\toprule
+MCU Profile & Budget (mJ) & Avg. Features & Avg. Energy & Saving & F$_1$ \\
+\midrule
+Cortex-M4 @ 168 MHz & {'budget': 0.22, 'memory_weight': 1.25, 'compute_weight': 1.1} & 25.0 & 0.2180 & 78.2\% & 0.9993 \\
+Cortex-M7 @ 216 MHz & {'budget': 0.3, 'memory_weight': 1.0, 'compute_weight': 0.9} & 34.1 & 0.2979 & 70.2\% & 0.9993 \\
+ESP32 @ 240 MHz & {'budget': 0.26, 'memory_weight': 1.45, 'compute_weight': 1.25} & 29.6 & 0.2582 & 74.2\% & 0.9994 \\
+\bottomrule
+\end{tabular}
+\end{table}
